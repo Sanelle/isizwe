@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boost My Business | IsizweHub</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loading Animation -->
+  <div class="loader">
+    <div class="loader-circle"></div>
+    <div class="loader-text">Loading IsizweHub</div>
+  </div>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/27xxxxxxxxx" class="float-whatsapp animate__animated animate__bounceIn">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">Isizwe<span>Hub</span></a>
+      <div class="nav-links">
+        <a href="#target-businesses">Who We Help</a>
+        <a href="#packages">Packages</a>
+        <a href="#portfolio">Our Work</a>
+        <a href="#contact">Contact</a>
+        <a href="#packages" class="btn-nav">Get Started</a>
+      </div>
+      <button class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container animate__animated animate__fadeIn">
+      <h1>Transform Your Business <span class="highlight">Online</span></h1>
+      <p class="subtitle">We help South African small businesses thrive with powerful, affordable digital solutions</p>
+      <div class="cta-buttons">
+        <a href="#packages" class="btn btn-primary btn-pulse">View Packages</a>
+        <a href="#portfolio" class="btn btn-outline">See Examples</a>
+      </div>
+      <div class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </div>
+    <div class="wave"></div>
+  </header>
+
+  <!-- Target Businesses Section -->
+  <section id="target-businesses" class="target-section">
+    <div class="container">
+      <h2 class="section-title">We Specialize In Helping <span class="highlight">These Businesses</span></h2>
+      <p class="section-description">No matter your industry, we have the perfect digital solution for your needs</p>
+      
+      <div class="business-grid">
+        <!-- Business cards remain the same as before -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number" data-count="150">0</div>
+          <div class="stat-label">Businesses Helped</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="97">0</div>
+          <div class="stat-label">% Satisfaction</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="3">0</div>
+          <div class="stat-label">Days Avg. Setup</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-count="200">0</div>
+          <div class="stat-label">% ROI Increase</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages" class="packages-section">
+    <div class="container">
+      <h2 class="section-title">Choose Your Perfect <span class="highlight">Package</span></h2>
+      <p class="section-description">Flexible options to fit every budget and business need</p>
+      
+      <!-- Pricing Toggle -->
+      <div class="pricing-toggle">
+        <span>Monthly</span>
+        <label class="switch">
+          <input type="checkbox" id="pricingToggle">
+          <span class="slider round"></span>
+        </label>
+        <span>Annual (Save 20%)</span>
+      </div>
+      
+      <div class="package-grid">
+        <!-- Package cards will be populated by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Package Customizer Modal -->
+  <div id="packageModal" class="modal">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <h3>Customize Your <span id="selectedPackageName"></span></h3>
+      
+      <div class="modal-body">
+        <div class="package-summary">
+          <h4>Package Includes:</h4>
+          <ul id="packageFeatures"></ul>
+          <div class="package-price">
+            <span id="packageBasePrice"></span>
+            <small id="packageBillingCycle"></small>
+          </div>
+        </div>
+        
+        <div class="addons-section">
+          <h4>Add Extra Features:</h4>
+          <div class="addons-grid" id="addonsGrid">
+            <!-- Addons will be populated by JavaScript -->
+          </div>
+        </div>
+        
+        <div class="total-section">
+          <div class="total-price">
+            <span>Total:</span>
+            <strong id="totalPrice">R0</strong>
+          </div>
+          <p class="small-text">No hidden fees. Cancel anytime.</p>
+        </div>
+        
+        <button id="proceedToPayment" class="btn btn-primary btn-block">Proceed to Payment</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio-section">
+    <div class="container">
+      <h2 class="section-title">See Our <span class="highlight">Work</span></h2>
+      <p class="section-description">Real results for real South African businesses</p>
+      
+      <div class="portfolio-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="restaurant">Restaurants</button>
+        <button class="filter-btn" data-filter="service">Services</button>
+        <button class="filter-btn" data-filter="retail">Retail</button>
+        <button class="filter-btn" data-filter="professional">Professional</button>
+      </div>
+      
+      <div class="portfolio-grid">
+        <!-- Portfolio items will be populated by JavaScript -->
+      </div>
+      
+      <div class="portfolio-cta">
+        <p>Want results like these for your business?</p>
+        <a href="#packages" class="btn btn-primary">Get Started Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Lightbox -->
+  <div id="portfolioLightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <div class="lightbox-content">
+      <img id="lightboxImage" src="" alt="">
+      <div class="lightbox-caption">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDescription"></p>
+        <div class="lightbox-stats">
+          <div><i class="fas fa-chart-line"></i> <span id="lightboxStats"></span></div>
+        </div>
+      </div>
+    </div>
+    <a class="lightbox-prev">&#10094;</a>
+    <a class="lightbox-next">&#10095;</a>
+  </div>
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <!-- Same as before -->
+  </section>
+
+  <!-- Process Section -->
+  <section class="process-section">
+    <div class="container">
+      <h2 class="section-title">How It <span class="highlight">Works</span></h2>
+      <p class="section-description">Simple steps to your business's digital transformation</p>
+      
+      <div class="process-steps">
+        <div class="process-card">
+          <div class="process-number">1</div>
+          <h3>Choose Your Package</h3>
+          <p>Select the perfect plan for your business needs and budget</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">2</div>
+          <h3>Onboarding Call</h3>
+          <p>We'll discuss your business goals and gather requirements</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">3</div>
+          <h3>Design & Development</h3>
+          <p>Our team builds your digital solution with your feedback</p>
+        </div>
+        <div class="process-card">
+          <div class="process-number">4</div>
+          <h3>Launch & Grow</h3>
+          <p>We deploy your solution and help you attract customers</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <!-- Same as before -->
+  </section>
+
+  <!-- Payment Modal -->
+  <div id="paymentModal" class="modal">
+    <div class="modal-content payment-content">
+      <span class="close-modal">&times;</span>
+      <h3>Complete Your Purchase</h3>
+      
+      <div class="payment-body">
+        <div class="order-summary">
+          <h4>Order Summary</h4>
+          <ul id="orderItems"></ul>
+          <div class="order-total">
+            <span>Total:</span>
+            <strong id="orderTotalPrice">R0</strong>
+          </div>
+        </div>
+        
+        <form id="paymentForm" class="payment-form">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="business">Business Name</label>
+            <input type="text" id="business" required>
+          </div>
+          
+          <div class="payment-methods">
+            <h4>Payment Method</h4>
+            <div class="method-options">
+              <label class="method-option">
+                <input type="radio" name="paymentMethod" value="card" checked>
+                <i class="far fa-credit-card"></i> Credit/Debit Card
+              </label>
+              <label class="method-option">
+                <input type="radio" name="paymentMethod" value="eft">
+                <i class="fas fa-university"></i> EFT
+              </label>
+              <label class="method-option">
+                <input type="radio" name="paymentMethod" value="payflex">
+                <i class="fas fa-calendar-alt"></i> PayFlex (Pay in 4)
+              </label>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Complete Payment</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirmation Modal -->
+  <div id="confirmationModal" class="modal">
+    <div class="modal-content confirmation-content">
+      <div class="confirmation-body">
+        <div class="confirmation-icon">
+          <i class="fas fa-check-circle"></i>
+        </div>
+        <h3>Payment Successful!</h3>
+        <p>Thank you for choosing IsizweHub. We've sent a confirmation to your email.</p>
+        <p>Our team will contact you within 24 hours to begin your project.</p>
+        <button id="closeConfirmation" class="btn btn-primary">Back to Home</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <!-- Same as before -->
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
